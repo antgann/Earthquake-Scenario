@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="1.0.0 2018-02-23" category="test" instance="jrand-contour@trinitite" message_type="new" orig_sys="eqinfo2gm" ref_id="0" ref_src="" timestamp="" version="0">
+
+  <core_info id="2013_SantaMaria_M4.1">
+    <mag units="Mw">4.1000</mag>
+    <mag_uncer units="Mw">0.5000</mag_uncer>
+    <lat units="deg">34.3523</lat>
+    <lat_uncer units="deg">0.1283</lat_uncer>
+    <lon units="deg">-121.6143</lon>
+    <lon_uncer units="deg">0.1283</lon_uncer>
+    <depth units="km">8.0000</depth>
+    <depth_uncer units="km">5.0000</depth_uncer>
+    <orig_time units="UTC">2013-08-24T01:16:21.340Z</orig_time>
+    <orig_time_uncer units="sec">2.5177</orig_time_uncer>
+    <likelihood>0.7000</likelihood>
+    <num_stations>0</num_stations>
+  </core_info>
+
+  <contributors>
+    <contributor alg_instance="dm@eew2" alg_name="dm" alg_version="2.0.5 2013-05-08" category="test" event_id="2013_SantaMaria_M4.1" version="0"/>
+  </contributors>
+
+  <gm_info>
+    <gmcontour_pred number="3">
+      <contour>
+        <MMI units="">2.0000</MMI>
+        <PGA units="cm/s/s">1.3865</PGA>
+        <PGV units="cm/s">0.0615</PGV>
+        <polygon number="8">34.5918,-121.6143 34.5215,-121.4088 34.3520,-121.3242 34.1828,-121.4096 34.1128,-121.6143 34.1828,-121.8190 34.3520,-121.9044 34.5215,-121.8198 34.5918,-121.6143</polygon>
+      </contour>
+      <contour>
+        <MMI units="">3.0000</MMI>
+        <PGA units="cm/s/s">6.1249</PGA>
+        <PGV units="cm/s">0.2947</PGV>
+        <polygon number="8">34.4381,-121.6143 34.4130,-121.5407 34.3523,-121.5103 34.2916,-121.5408 34.2665,-121.6143 34.2916,-121.6878 34.3523,-121.7183 34.4130,-121.6879 34.4381,-121.6143</polygon>
+      </contour>
+      <contour>
+        <MMI units="">4.0000</MMI>
+        <PGA units="cm/s/s">27.0557</PGA>
+        <PGV units="cm/s">1.4114</PGV>
+        <polygon number="8">34.3723,-121.6143 34.3664,-121.5972 34.3523,-121.5901 34.3382,-121.5972 34.3323,-121.6143 34.3382,-121.6314 34.3523,-121.6385 34.3664,-121.6314 34.3723,-121.6143</polygon>
+      </contour>
+    </gmcontour_pred>
+  </gm_info>
+
+</event_message>
+
+

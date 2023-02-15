@@ -1,0 +1,15 @@
+<event_message category="live" orig_sys="dm" message_type="new" version="0">
+    <core_info id="1952_KernCounty_M7.3">
+        <mag units="Mw">7.3</mag>
+        <mag_uncer units="Mw"> 1.0000 </mag_uncer>
+        <lat units="deg"> 35 </lat>
+        <lat_uncer units="deg"> 0.5000 </lat_uncer>
+        <lon units="deg"> -119.01 </lon>
+        <lon_uncer units="deg"> 0.5000 </lon_uncer>
+        <depth units="km">10</depth>
+        <depth_uncer units="km"> 50.0000 </depth_uncer>
+        <orig_time units="UTC">1952-07-21T11:52:14.388Z </orig_time>
+        <orig_time_uncer units="sec"> 20.0000 </orig_time_uncer>
+        <likelihood>1.0000</likelihood>
+    </core_info>
+</event_message>

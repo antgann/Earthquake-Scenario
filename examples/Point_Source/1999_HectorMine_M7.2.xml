@@ -1,0 +1,15 @@
+<event_message category="live" orig_sys="dm" message_type="new" version="0">
+    <core_info id="1999_HectorMine_M7.2">
+        <mag units="Mw">7.1</mag>
+        <mag_uncer units="Mw"> 1.0000 </mag_uncer>
+        <lat units="deg"> 34.63 </lat>
+        <lat_uncer units="deg"> 0.5000 </lat_uncer>
+        <lon units="deg"> -116.3 </lon>
+        <lon_uncer units="deg"> 0.5000 </lon_uncer>
+        <depth units="km">0</depth>
+        <depth_uncer units="km"> 50.0000 </depth_uncer>
+        <orig_time units="UTC">1999-10-16T03:04:53.388Z </orig_time>
+        <orig_time_uncer units="sec"> 20.0000 </orig_time_uncer>
+        <likelihood>1.0000</likelihood>
+    </core_info>
+</event_message>

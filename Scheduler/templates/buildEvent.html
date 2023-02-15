@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<title>Build Your Own Event</title>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
+
+{% block body %}
+
+{% endblock %}
+
+{% block content %}
+<script>
+function showMe(key) {
+	$(document).ready(function(){
+		classToShow = "#" + key;
+		$("p[id^='showHide']").hide(); 
+		$(classToShow).show(); 
+	});
+}
+
+$(document).ready(function(){
+  $("#eventMagnitude").blur(function() {
+    var magVal = $("#eventMagnitude").val();
+    if (! (magVal.match( "{{ request.session.magDepthExpr }}" ))) {
+      $("#error-messages").text( "Incorrect format:  Magnitude" ).fadeIn();
+    }
+    else if( magVal < {{ request.session.magMin }} || magVal > {{ request.session.magMax }}) {
+      $("#error-messages").text( "Magnitude value out of range" ).fadeIn();
+    }
+    else {
+      $("#error-messages").empty().fadeOut();
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#eventLatitude").blur(function() {
+    var latVal = $("#eventLatitude").val();
+    if (! (latVal.match( "{{ request.session.latLonExpr }}" ))) {
+      $("#error-messages").text( "Incorrect format:  Latitude" ).fadeIn();
+    }
+    else if( latVal < {{ request.session.latMin }} || latVal > {{ request.session.latMax }}) {
+      $("#error-messages").text( "Latitude value out of range" ).fadeIn();
+    }
+    else {
+      $("#error-messages").empty().fadeOut();
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#eventLongitude").blur(function() {
+    var lonVal = $("#eventLongitude").val();
+    if (! (lonVal.match( "{{ request.session.latLonExpr }}" ))) {
+      $("#error-messages").text( "Incorrect format:  Longitude" ).fadeIn();
+    }
+    else if( lonVal < {{ request.session.lonMin }} || lonVal > {{ request.session.lonMax }}) {
+      $("#error-messages").text( "Longitude value out of range" ).fadeIn();
+    }
+    else {
+      $("#error-messages").empty().fadeOut();
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#eventDepth").blur(function() {
+    var depthVal = $("#eventDepth").val();
+    if (! (depthVal.match( "{{ request.session.magDepthExpr }}" ))) {
+      $("#error-messages").text( "Incorrect format:  Depth" ).fadeIn();
+    }
+    else if( depthVal < {{ request.session.depthMin }} || depthVal > {{ request.session.depthMax }}) {
+      $("#error-messages").text( "Depth value out of range" ).fadeIn();
+    }
+    else {
+      $("#error-messages").empty().fadeOut();
+    }
+  });
+});
+</script>
+
+<div align="right">
+  <div class="container">
+    <h4 class="alert alert-success" align="right">{{ request.session.welcomeMessage }}</h4>
+  </div>
+</div>	
+
+<!-- DYNAMIC ERROR MESSAGE -->
+<div class="alert alert-danger" style="display:none;" id="error-messages" ></div>
+
+<!-- FORM SUBMISSION ERROR MESSAGE -->
+{% if error_message %}
+<div class="alert alert-danger">
+  <div class="container">
+    <strong>{{ error_message }}</strong>
+  </div>
+</div>
+{% endif %}
+
+
+
+<h3>{{ "Build An Event" }}</h3><br />
+<h5><b>{{ "DISCLAIMER:  The scenarios produced in this section do not necessarily reflect real-world events and are provided for testing purposes ONLY" }}</b></h5><br />
+<h5>{{ "Select the properties for your custom earthquake scenario below:" }}</h5>
+
+
+
+<form action="{% url 'Scheduler:buildEvent' %}" method="post">
+
+
+
+
+{% csrf_token %}
+
+<div class="row">
+  <div class="col-md-1">
+    <div class="form-group">
+      <label for="eventMagnitude">Magnitude (valid range {{ request.session.magMin }} to {{ request.session.magMax }})</label><br />
+      <input type="text" id="eventMagnitude" class="form-control customTextWidth" name="eventMagnitude" value="{{ request.session.eventMagnitude }}" maxlength="3" /> 
+      <label for="eventLatitude">Latitude (valid range {{ request.session.latMin }} to {{ request.session.latMax }})</label><br />
+      <input type="text" id="eventLatitude" class="form-control customTextWidth" name="eventLatitude" value="{{ request.session.eventLatitude }}" maxlength="7" />
+      <label for="eventLongitude">Longitude (valid range {{ request.session.lonMin }} to {{ request.session.lonMax }})</label><br />
+      <input type="text" id="eventLongitude" class="form-control customTextWidth" name="eventLongitude" value="{{ request.session.eventLongitude }}" maxlength="8" />
+      <label for="eventDepth">Depth (valid range {{ request.session.depthMin }} to {{ request.session.depthMax }} km)</label><br />
+      <input type="text" id="eventDepth" class="form-control customTextWidth" name="eventDepth" value="{{ request.session.eventDepth }}" maxlength="4" />
+    </div>
+  </div>
+</div>
+
+<!-- CHOICE OF ORIGIN TIME IS MEANINGLESS TO USERDISPLAY FOR NOW
+<div class="row">
+  <div class="col-md-1">
+    <div class="form-group">
+      <input type="text" placeholder="Origin Day" id="eventOriginDay" class="form-control" name="eventOriginDay" value="" maxlength="2" />
+    </div>
+  </div>
+  <div class="col-md-1">
+    <div class="form-group">
+      <input type="text" placeholder="Origin Month" id="eventOriginMonth" class="form-control" name="eventOriginMonth" value="" maxlength="2" />
+    </div>
+  </div>
+  <div class="col-md-1">
+    <div class="form-group">
+      <input type="text" placeholder="Origin Year" id="eventOriginYear" class="form-control" name="eventOriginYear" value="" maxlength="4" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1">
+    <div class="form-group">
+      <input type="text" placeholder="Origin Hour" id="eventOriginHour" class="form-control" name="eventOriginHour" value="" maxlength="2" />
+    </div>
+  </div>
+  <div class="col-md-1">
+    <div class="form-group">
+      <input type="text" placeholder="Origin Minutes" id="eventOriginMinute" class="form-control" name="eventOriginMinute" value="" maxlength="2" />
+    </div>
+  </div>
+  <div class="col-md-1">
+    <div class="form-group">
+      <input type="text" placeholder="Origin Seconds" id="eventOriginSecond" class="form-control" name="eventOriginSecond" value="" maxlength="2" />
+    </div>
+  </div>
+</div>
+
+
+<br />
+<h3>{{ "Choose a message type" }}</h3>
+<input type="radio" name="messageType" id="messageType" value="" checked="checked" />&nbsp;Standard<br />
+<input type="radio" name="messageType" id="messageType" value="contour" />&nbsp;Contour<br />
+<input type="radio" name="messageType" id="messageType" value="map"  />&nbsp;Map<br /><br />
+-->
+
+<br /><b>Encoding of output:</b><br />
+<table>
+  <tr>
+    <td>
+      <input type="radio" name="messageEncoding" id="textMessage" value="textMessage" {% if request.session.lastEncodingSelected == "textMessage" %} checked="checked"  {% endif %} />
+    </td>
+    <td>textMessage</td>
+  </tr>
+  <tr>
+    <td>
+      <input type="radio" name="messageEncoding" id="bytesMessage" value="bytesMessage" {% if request.session.lastEncodingSelected == "bytesMessage" %} checked="checked"  {% endif %} />
+    </td>
+    <td>bytesMessage</td>
+  </tr>
+</table>
+<br />
+
+<input class="btn btn-primary" type="submit" value="Build" onClick="$('#newLoading').show();" />
+
+</form>
+<div id="newLoading" style="display:none;"><h5>Loading - Please Wait</h5></div>
+
+
+
+{% endblock %}
+

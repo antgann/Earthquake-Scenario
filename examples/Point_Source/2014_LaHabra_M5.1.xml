@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="2.0.11 2014-02-03" category="live" instance="dm@eew2" message_type="new" orig_sys="dm" timestamp="2014-03-29T04:09:46.281Z" version="0">
+
+  <core_info id="2014_LaHabra_M5.1">
+    <mag units="Mw">5.1</mag>
+    <mag_uncer units="Mw">0.3982</mag_uncer>
+    <lat units="deg">33.9454</lat>
+    <lat_uncer units="deg">0.1283</lat_uncer>
+    <lon units="deg">-117.9237</lon>
+    <lon_uncer units="deg">0.1283</lon_uncer>
+    <depth units="km">8.0000</depth>
+    <depth_uncer units="km">5.0000</depth_uncer>
+    <orig_time units="UTC">2014-03-29T04:09:42.131Z</orig_time>
+    <orig_time_uncer units="sec">2.5177</orig_time_uncer>
+    <likelihood>0.9091</likelihood>
+  </core_info>
+
+</event_message>

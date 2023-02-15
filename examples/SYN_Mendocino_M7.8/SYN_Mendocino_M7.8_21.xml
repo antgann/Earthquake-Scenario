@@ -1,0 +1,60 @@
+<event_message category="test" message_type="update" orig_sys="dm" version="21" timestamp="2013-03-01T21:52:42.000Z">
+    <core_info id="FinDer_Mendocino_M7.8">
+    <!--contributors: [finder,12345678,21,test]-->
+    <mag units="Mw">7.8</mag>
+    <mag_uncer units="Mw">0.3536</mag_uncer>
+    <lat units="deg">40.350000</lat>
+    <lat_uncer units="deg">0.3536</lat_uncer>
+    <lon units="deg">-124.950000</lon>
+    <lon_uncer units="deg">0.3536</lon_uncer>
+    <depth units="km">5.000000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-03-01T21:51:56Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+  </core_info>
+<fault_info>
+  <finite_fault atten_geom="true" segment_number="1" segment_shape="line">
+    <segment>
+      <vertices>
+        <vertex>
+          <lat units="deg">40.3567</lat>
+          <lon units="deg">-124.9432</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">40.3446</lat>
+          <lon units="deg">-124.8892</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">40.3319</lat>
+          <lon units="deg">-124.8352</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">40.2975</lat>
+          <lon units="deg">-124.6282</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">40.1898</lat>
+          <lon units="deg">-124.2952</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">39.9358</lat>
+          <lon units="deg">-124.0162</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">39.7084</lat>
+          <lon units="deg">-123.9982</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">39.6132</lat>
+          <lon units="deg">-123.9802</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">39.5653</lat>
+          <lon units="deg">-123.9712</lon>
+        </vertex>
+      </vertices>
+    </segment>
+  </finite_fault>
+</fault_info>
+</event_message>

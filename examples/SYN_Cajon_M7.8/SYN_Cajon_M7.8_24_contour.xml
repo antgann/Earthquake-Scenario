@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="1.0.0 2018-02-23" category="test" instance="jrand-contour@trinitite" message_type="update" orig_sys="eqinfo2gm" ref_id="0" ref_src="" timestamp="2013-01-29T17:47:52.000Z" version="24">
+
+  <core_info id="FinDer_Cajon_M7.8">
+    <mag units="Mw">7.8000</mag>
+    <mag_uncer units="Mw">0.3536</mag_uncer>
+    <lat units="deg">34.8200</lat>
+    <lat_uncer units="deg">0.3536</lat_uncer>
+    <lon units="deg">-118.9000</lon>
+    <lon_uncer units="deg">0.3536</lon_uncer>
+    <depth units="km">5.0000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-01-29T17:47:00.000Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+    <num_stations>0</num_stations>
+  </core_info>
+
+  <contributors>
+    <contributor alg_instance="-" alg_name="dm" alg_version="-" category="test" event_id="FinDer_Cajon_M7.8" version="24"/>
+  </contributors>
+
+  <fault_info>
+    <finite_fault atten_geom="true" segment_number="1" segment_shape="line">
+      <segment>
+        <vertices>
+          <vertex>
+            <lat units="deg">34.4330</lat>
+            <lon units="deg">-117.8330</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.4580</lat>
+            <lon units="deg">-117.8900</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.4770</lat>
+            <lon units="deg">-117.9330</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.5040</lat>
+            <lon units="deg">-118.0000</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.5190</lat>
+            <lon units="deg">-118.0360</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.5460</lat>
+            <lon units="deg">-118.1020</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.5730</lat>
+            <lon units="deg">-118.1690</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.5890</lat>
+            <lon units="deg">-118.2060</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.6050</lat>
+            <lon units="deg">-118.2530</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.6320</lat>
+            <lon units="deg">-118.3270</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.6440</lat>
+            <lon units="deg">-118.3570</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.6670</lat>
+            <lon units="deg">-118.4180</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.6860</lat>
+            <lon units="deg">-118.4710</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.7100</lat>
+            <lon units="deg">-118.5490</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.7210</lat>
+            <lon units="deg">-118.5880</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.7390</lat>
+            <lon units="deg">-118.6540</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.7530</lat>
+            <lon units="deg">-118.7000</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.7710</lat>
+            <lon units="deg">-118.7620</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.7830</lat>
+            <lon units="deg">-118.8100</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.7990</lat>
+            <lon units="deg">-118.8670</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8150</lat>
+            <lon units="deg">-118.9130</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8210</lat>
+            <lon units="deg">-118.9580</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8320</lat>
+            <lon units="deg">-119.0350</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8470</lat>
+            <lon units="deg">-119.0910</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8520</lat>
+            <lon units="deg">-119.1160</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8610</lat>
+            <lon units="deg">-119.1900</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8800</lat>
+            <lon units="deg">-119.2630</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.8960</lat>
+            <lon units="deg">-119.3090</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.9390</lat>
+            <lon units="deg">-119.4010</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">34.9800</lat>
+            <lon units="deg">-119.4650</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.0180</lat>
+            <lon units="deg">-119.5200</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.0520</lat>
+            <lon units="deg">-119.5680</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.1010</lat>
+            <lon units="deg">-119.6270</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.1240</lat>
+            <lon units="deg">-119.6560</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.1500</lat>
+            <lon units="deg">-119.6910</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.2030</lat>
+            <lon units="deg">-119.7530</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.2380</lat>
+            <lon units="deg">-119.7900</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.2780</lat>
+            <lon units="deg">-119.8330</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.3180</lat>
+            <lon units="deg">-119.8740</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.3550</lat>
+            <lon units="deg">-119.9090</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.3900</lat>
+            <lon units="deg">-119.9460</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.4370</lat>
+            <lon units="deg">-119.9910</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.4700</lat>
+            <lon units="deg">-120.0190</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.5120</lat>
+            <lon units="deg">-120.0600</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">35.5480</lat>
+            <lon units="deg">-120.0970</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+        </vertices>
+      </segment>
+    </finite_fault>
+  </fault_info>
+
+  <gm_info>
+    <gmcontour_pred number="8">
+      <contour>
+        <MMI units="">2.0000</MMI>
+        <PGA units="cm/s/s">2.8480</PGA>
+        <PGV units="cm/s">0.2154</PGV>
+        <polygon number="8">35.5385,-111.2520 29.0726,-116.3693 29.9761,-121.7185 30.5327,-122.8693 34.0932,-126.5631 40.8881,-121.7893 39.9028,-115.7822 39.3465,-114.6802 35.5385,-111.2520</polygon>
+      </contour>
+      <contour>
+        <MMI units="">3.0000</MMI>
+        <PGA units="cm/s/s">8.1113</PGA>
+        <PGV units="cm/s">0.6449</PGV>
+        <polygon number="8">35.2565,-113.1668 30.6193,-116.7742 31.3498,-120.7967 31.9069,-121.9431 34.5474,-124.7230 39.3514,-121.2754 38.5797,-116.9116 38.0227,-115.7996 35.2565,-113.1668</polygon>
+      </contour>
+      <contour>
+        <MMI units="">4.0000</MMI>
+        <PGA units="cm/s/s">23.1013</PGA>
+        <PGV units="cm/s">1.9307</PGV>
+        <polygon number="8">34.9671,-114.9366 32.0579,-117.1628 32.6224,-119.9142 33.1797,-121.0558 34.9452,-122.9926 37.9191,-120.8170 37.3386,-117.9259 36.7814,-116.8056 34.9671,-114.9366</polygon>
+      </contour>
+      <contour>
+        <MMI units="">5.0000</MMI>
+        <PGA units="cm/s/s">65.7933</PGA>
+        <PGV units="cm/s">5.7797</PGV>
+        <polygon number="8">34.7030,-116.4200 33.2709,-117.5004 33.6914,-119.1499 34.2488,-120.2868 35.2615,-121.5197 36.7091,-120.4439 36.2848,-118.7560 35.7274,-117.6294 34.7030,-116.4200</polygon>
+      </contour>
+      <contour>
+        <MMI units="">6.0000</MMI>
+        <PGA units="cm/s/s">123.8500</PGA>
+        <PGV units="cm/s">11.2687</PGV>
+        <polygon number="8">34.5748,-117.1028 33.8317,-117.6597 34.1842,-118.7899 34.7417,-119.9245 35.4018,-120.8346 36.1491,-120.2752 35.7955,-119.1324 35.2380,-118.0031 34.5748,-117.1028</polygon>
+      </contour>
+      <contour>
+        <MMI units="">7.0000</MMI>
+        <PGA units="cm/s/s">232.3380</PGA>
+        <PGV units="cm/s">21.8805</PGV>
+        <polygon number="8">34.4897,-117.5439 34.1947,-117.7640 34.5028,-118.5545 35.0603,-119.6875 35.4906,-120.3896 35.7862,-120.1673 35.4780,-119.3736 34.9205,-118.2427 34.4897,-117.5439</polygon>
+      </contour>
+      <contour>
+        <MMI units="">8.0000</MMI>
+        <PGA units="cm/s/s">435.8572</PGA>
+        <PGV units="cm/s">42.4856</PGV>
+        <polygon number="8">34.4478,-117.7577 34.3709,-117.8150 34.6573,-118.4396 35.2148,-119.5719 35.5331,-120.1733 35.6101,-120.1153 35.3237,-119.4901 34.7662,-118.3583 34.4478,-117.7577</polygon>
+      </contour>
+      <contour>
+        <MMI units="">9.0000</MMI>
+        <PGA units="cm/s/s">817.6516</PGA>
+        <PGV units="cm/s">82.4948</PGV>
+        <polygon number="8">34.4364,-117.8159 34.4189,-117.8289 34.6994,-118.4082 35.2569,-119.5403 35.5446,-120.1143 35.5621,-120.1011 35.2816,-119.5217 34.7241,-118.3898 34.4364,-117.8159</polygon>
+      </contour>
+    </gmcontour_pred>
+  </gm_info>
+
+</event_message>
+
+

@@ -1,0 +1,400 @@
+Actual:
+  - eventID: M4.5 El Monte (east LA)
+    fileLocation: examples/ElMonte_20200919/ElMonte_20200919.eew
+    description: Deep (18 km), under east LA , 2020-09-19; 5 update messages, follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M4.5
+    location: 34.07, -118.09
+    depth: 5 km
+    followUp: Y
+    updateMessages: 5,5,5
+    eventNotes: Felt throughout LA
+    uniqueID: AyiBlzDI
+  - eventID: M4.6 Westmoreland
+    fileLocation: examples/Westmoreland/Westmoreland.eew
+    description: Westmoreland (S. Imperial Valley), 2020-10-01; 8 update messages, follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M4.6
+    location: 33.04, -115.6
+    depth: 8 km
+    followUp: Y
+    updateMessages: 7,5,5
+    eventNotes: ShakeAlert peak magnitude >5.0; WEA triggered
+    uniqueID: ByiBlzDI
+  - eventID: M4.6 Seattle-area
+    fileLocation: examples/Seattle/Seattle.eew
+    description: Moderate Seattle-area event, 2019-07-12; 6 update messages
+    timeStamp: now
+    originTime: now-5
+    magnitude: M4.6
+    location: 47.89, -121.97
+    depth: 9 km
+    followUp: N
+    updateMessages: 6,5,5
+    eventNotes: Widely felt
+    uniqueID: CyiBlzDI
+  - eventID: M7.1 Ridgecrest, mainshock
+    fileLocation: examples/RidgecrestM7.1/RidgecrestM7.1.eew
+    description: Eastern California, 2019-07-06, long rupture, finite-fault solution, 7 updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.1
+    location: 35.77, -117.62
+    depth: 9 km
+    followUp: N
+    updateMessages: 9,9,9
+    eventNotes: Widely felt in Los Angeles 200 km from epicenter; magnitude increases with time; event time = time of T&C rerun; "T&C" = Test and Certification, indicates an event with seismic data used to test ShakeAlert software
+    uniqueID: DyiBlzDI
+  - eventID: M6.4 Ridgecrest, foreshock
+    fileLocation: examples/RidgecrestM6.4/RidgecrestM6.4.eew
+    description: Eastern California, 2019-07-04, 6 updates, finite-fault solution, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.4
+    location: 35.77, -117.62
+    depth: 9 km
+    followUp: N
+    updateMessages: 6,6,6
+    eventNotes: Widely felt in north Los Angeles 200 km from epicenter; magnitude updates with time.  Event time = time of T&C rerun
+    uniqueID: EyiBlzDI
+  - eventID: M5.5 Ridgecrest aftershock
+    fileLocation: examples/RidgecrestM5.5/RidgecrestM5.5.eew
+    description: Eastern California, 2019-07-05, 6 updates, no followup
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.5
+    location: 35.77, -117.62
+    depth: 9 km
+    followUp: N
+    updateMessages: 6,6,6
+    eventNotes: Large aftershock of M6.4; event time = time of T&C test
+    uniqueID: FyiBlzDI
+  - eventID: M5.0 Ridgecrest foreshock
+    fileLocation: examples/RidgecrestM5Foreshock/RidgecrestM5Foreshock.eew
+    description: Eastern California, 2019-07-06, near foreshock to M7.1; 3 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.0
+    location: 35.77, -117.62
+    depth: 9 km
+    followUp: N
+    updateMessages: 3,3,3
+    eventNotes: Foreshock minutes before Ridgecrest M7.1; event time = time of T&C test
+    uniqueID: GyiBlzDI
+Special:
+  - eventID: M5.1 Channel Islands false alert
+    fileLocation: examples/Cancel_test/Cancel_test.eew
+    description: Cancel example ; M5.1 near the Channel Islands
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.1
+    location: 33.25, -118.82
+    depth: 5 km
+    followUp: N
+    updateMessages: 0,-,-
+    eventNotes: Cancel example ; M5.1 near the Channel Islands; Intensity III in downtown Los Angeles; 0 update messages; 1 cancel message
+    uniqueID: AeiopmOW
+  - eventID: M5.5 N Mexico
+    fileLocation: examples/NMexico/NMexico.eew
+    description: 2020-03-07; south of border, with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.5
+    location: 31.74, -114.58
+    depth: 8 km
+    followUp: N
+    updateMessages: 4,4,3
+    eventNotes: Event in Mexico; ShakeAlert contours reach inside US
+    uniqueID: BeiopmOW
+  - eventID: M5.1 Ferndale
+    fileLocation: examples/Ferndale/Ferndale.eew
+    description: 2020-03-18; Moderate event near shore, with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.1
+    location: 40.42, -124.24
+    depth: 9 km
+    followUp: N
+    updateMessages: 11,9,9
+    eventNotes: ShakeAlert inflates magnitude, moves event far offshore
+    uniqueID: CeiopmOW
+  - eventID: M3.0 Ferndale
+    fileLocation: examples/FerndaleM3/FerndaleM3.eew
+    description: 2020-11-02; Small event off NW California; with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M3.0
+    location: 40.29, -124.63
+    depth: 8 km
+    followUp: N
+    updateMessages: 20,7,6
+    eventNotes: ShakeAlert inflated magnitude, moves event far offshore with large M, outside alert boundary; then back near shore with reasonable magnitude
+    uniqueID: DeiopmOW
+  - eventID: M5.9 Mendocino
+    fileLocation: examples/Point_Source/missed_20200309.xml
+    description: 2020-03-09; Missed alert example
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.9
+    location: 40.39, -125.09
+    depth: 3.2 km
+    followUp: Y
+    updateMessages: 0,-,-
+    eventNotes: ShakeAlert located outside alert boundary; no alert sent.  Actual event near shore, felt
+    uniqueID: EeiopmOW
+Historical:
+  - eventID: M6.7 Northridge
+    fileLocation: examples/Point_Source/1994_Northridge_M6.7.xml
+    description: Northridge, 1994-01-17; north of Los Angeles; point source, no updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.7
+    location: 34.207, -118.535
+    depth: 5 km
+    followUp: N
+    updateMessages: 0,0,0
+    eventNotes: Legacy scenario; damaging; widely felt
+    uniqueID: AydHyxRE
+  - eventID: M7.9 San Andreas
+    fileLocation: examples/Point_Source/1857_FortTejon_M7.9.xml
+    description: Fort Tejon, 1857-01-09 on San Andreas fault; point source, no updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.9
+    location: 35.43, -120.19
+    depth: 5 km
+    followUp: N
+    updateMessages: 0,0,0
+    eventNotes: Legacy scenario; Widely felt in California
+    uniqueID: BydHyxRE
+  - eventID: M7.2 Hector Mine
+    fileLocation: examples/TCEVENTS/HectorMine1999/HectorMine1999.eew
+    description: Desert northeast of San Bernardino, 1999; finite fault source, 7 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.2
+    location: 34.63, -116.3
+    depth: 0 km
+    followUp: N
+    updateMessages: 7,7,7
+    eventNotes: Intensity VII in downtown Los Angeles; event time = time of T&C test
+    uniqueID: CydHyxRE
+  - eventID: M6.8 Nisqually
+    fileLocation: examples/TCEVENTS/Nisqually2003/Nisqually2003.eew
+    description: Deep Seattle-area, 2001; 1 update, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.8
+    location: 47.149, -122.727
+    depth: 51.9 km
+    followUp: N
+    updateMessages: 1,-,1
+    eventNotes: Intensity VIII in Olympia; event time = time of T&C test
+    uniqueID: DydHyxRE
+  - eventID: M4.7 Anza
+    fileLocation: examples/TCEVENTS/Anza2013/Anza2013.eew
+    description: Mountains SE of Los Angeles, 2013; 5 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M4.7
+    location: 33.5973, -116.5137
+    depth: 9 km
+    followUp: N
+    updateMessages: 5,5,5
+    eventNotes:  Intensity VI in downtown Los Angeles; event time = time of T&C test
+    uniqueID: EydHyxRE
+  - eventID: M5.6 Alum Rock
+    fileLocation: examples/TCEVENTS/AlumRock/AlumRock.eew
+    description: South of San Jose, 2007-10-30, 5 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.6
+    location: 37.43, -121.76
+    depth: 9 km
+    followUp: N
+    updateMessages: 5,5,5
+    eventNotes:  Felt throughout South Bay region; event time=time of T&C test
+    uniqueID: FydHyxRE
+  - eventID: M6.0 South Napa
+    fileLocation: examples/TCEVENTS/Napa2014/Napa2014.eew
+    description: Napa Valley, NW of San Francisco, 2014-08-24, 7 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.0
+    location: 38.21, -122.31
+    depth: 9 km
+    followUp: N
+    updateMessages: 7,7,7
+    eventNotes:  Widely felt in North Bay; event time=time of T&C test
+    uniqueID: GydHyxRE
+  - eventID: M6.5 San Simeon
+    fileLocation: examples/TCEVENTS/SanSimeon2003/SanSimeon2003.eew
+    description: California central coast, 2003-12-22; 3 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.5
+    location: 35.67, -121.12
+    depth: 9 km
+    followUp: N
+    updateMessages: 3,3,3
+    eventNotes:  Widely felt; west of the San Andreas fault; event time=time of T&C test
+    uniqueID: HydHyxRE
+  - eventID: M5.4 Chino Hills
+    fileLocation: examples/TCEVENTS/ChinoHills2008/ChinoHills2008.eew
+    description: East of Los Angeles, 2008; 5 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.4
+    location: 33.953, -117.76
+    depth: 5 km
+    followUp: N
+    updateMessages: 5,5,5
+    eventNotes:  Intensity IV in downtown Los Angeles; event time = time of T&C test
+    uniqueID: IydHyxRE
+  - eventID: M5.1 La Habra
+    fileLocation: examples/TCEVENTS/LaHabra2014/LaHabra2014.eew
+    description: East of Los Angeles, 2014; 5 updates, no follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M5.1
+    location: 33.932, -117.917
+    depth: 4.8 km
+    followUp: N
+    updateMessages: 5,0,0
+    eventNotes: Intensity III in downtown Los Angeles; event time = time of T&C test
+    uniqueID: JydHyxRE
+  - eventID: M6.6 San Fernando
+    fileLocation: examples/Point_Source/1971_SanFernando_M6.6.xml
+    description: North San Fernando Valley, 1971; point source, no updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.6
+    location: 34.416, -118.37
+    depth: 8.4 km
+    followUp: N
+    updateMessages: 0,0,0
+    eventNotes: Legacy scenario;  Intensity VI in downtown Los Angeles
+    uniqueID: KydHyxRE
+  - eventID: M7.3 Kern County
+    fileLocation: examples/Point_Source/1952_KernCounty_M7.3.xml
+    description: South of Bakersfield, 1952; point source, no updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.3
+    location: 35.00, -119.01
+    depth: 10 km
+    followUp: N
+    updateMessages: 0,0,0
+    eventNotes: Legacy scenario; largest instrumental era earthquake in SoCal; Intensity V in downtown Los Angeles, widely felt.
+    uniqueID: LydHyxRE
+  - eventID: M6.9 Loma Prieta
+    fileLocation: examples/Point_Source/1989_LomaPrieta_M6.9.xml
+    description: South of San Francisco, 1989; point source, no updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.9
+    location: 37.04, -121.88
+    depth: 5 km
+    followUp: N
+    updateMessages: 0,0,0
+    eventNotes: Legacy scenario; intensity >=VIII in San Francisco, East Bay
+    uniqueID: MydHyxRE
+  - eventID: M7.0 Imperial
+    fileLocation: examples/SYN_Imperial_M7.0/SYN_Imperial_M7.0.eew
+    description: Imperial fault, finite fault with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.0
+    location: 32.52, -115.21
+    depth: 10 km
+    followUp: N
+    updateMessages: 10,10,10
+    eventNotes: Legacy scenario
+    uniqueID: NydHyxRE
+Scenario:
+  - eventID: M7.8 Mendocino
+    fileLocation: examples/SYN_Mendocino_M7.8/SYN_Mendocino_M7.8.eew
+    description: Mendocino area, finite fault with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.8
+    location: 40.35, -124.95
+    depth: 5 km
+    followUp: N
+    updateMessages: 53,53,53
+    eventNotes: Legacy scenario
+    uniqueID: aXhafK9g
+  - eventID: M8.0 Olympic Coast
+    fileLocation: examples/Point_Source/2015_Olympic_Coast_M8.0.xml
+    description: Off-shore Washington State
+    timeStamp: now
+    originTime: now-5
+    magnitude: M8.0
+    location: 47.797, -124.732
+    depth: 23 km
+    followUp: N
+    updateMessages: 0,0,0
+    eventNotes: Legacy scenario
+    uniqueID: bXhafK9gs
+  - eventID: M6.3 Rose Canyon
+    fileLocation: examples/Point_Source/RoseCanyon_M6.3.xml
+    description: San Diego, late 1800's; point source, no updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M6.3
+    location: 32.625, -117.150
+    depth: 3.5 km
+    followUp: N
+    updateMessages: 0,0,0
+    eventNotes: Legacy scenario; felt throughout San Diego area
+    uniqueID: hXhafK9gs
+  - eventID: M7.8 Cajon
+    fileLocation: examples/SYN_Cajon_M7.8_Follow_Up/SYN_Cajon_M7.8.eew
+    description: San Andreas fault; Finite fault with follow-up
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.8
+    location: 34.82, -118.90
+    depth: 5 km
+    followUp: Y
+    updateMessages: 0,53,0
+    eventNotes: Legacy scenario
+    uniqueID: iXhafK9gs
+  - eventID: M7.8 Salton Sea
+    fileLocation: examples/SYN_SaltonSea_M7.8/SYN_SaltonSea_M7.8.eew
+    description: San Andreas fault; Finite fault with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.8
+    location: 33.35, -115.73
+    depth: 5 km
+    followUp: N
+    updateMessages: 53,53,53
+    eventNotes: Legacy scenario
+    uniqueID: jXhafK9gs
+  - eventID: M7.8 Elsinore
+    fileLocation: examples/SYN_Elsinore_M7.8/SYN_Elsinore_M7.8.eew
+    description: Elsinore fault, finite fault with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.8
+    location: 32.53, -115.71
+    depth: 5 km
+    followUp: N
+    updateMessages: 53,53,53
+    eventNotes: Legacy scenario
+    uniqueID: kXhafK9gs
+  - eventID: M7.8 Point Arena
+    fileLocation: examples/SYN_PointArena_M7.8/SYN_PointArena_M7.8.eew
+    description: San Andreas fault N of San Francisco; finite fault with updates
+    timeStamp: now
+    originTime: now-5
+    magnitude: M7.8
+    location: 39.00, -123.69
+    depth: 5 km
+    followUp: N
+    updateMessages: 53,53,53
+    eventNotes: Legacy scenario
+    uniqueID: mXhafK9gs

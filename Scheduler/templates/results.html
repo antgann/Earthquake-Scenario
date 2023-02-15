@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Results</title>
+{% endblock %}
+
+{% block content %}
+
+<div align="right">
+  <div class="container">
+    <h4 class="alert alert-success" align="right">{{ request.session.welcomeMessage }}</h4>
+  </div>
+</div>	
+
+<h1>{{ "Results" }}</h1>
+
+<h4>{{ "Event ID: " }} {{ nextEventID }}_{{ chosenEvent.eventID }}</h4>
+
+<br /><br />
+
+<h4>{{ "Description: " }} {{ chosenEvent.description }}</h4>
+
+<h4>{{ "Message Type: " }} {{ messageType }}</h4>
+
+<h4>{{ "Magnitude: " }} {{ chosenEvent.magnitude }}</h4>
+
+<h4>{{ "Location: " }} {{ chosenEvent.location }}</h4>
+
+<h4>{{ "Depth: " }} {{ chosenEvent.depth }}</h4>
+
+<h4>{{ "Event Notes: " }} {{ chosenEvent.eventNotes }}</h4>
+
+<h4>{{ "Encoding Type: " }} {{ request.session.lastEncodingSelected }}</h4>
+
+{% endblock %}
+
+
+
+
+

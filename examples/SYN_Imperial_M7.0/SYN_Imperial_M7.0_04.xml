@@ -1,0 +1,48 @@
+<event_message category="test" message_type="update" orig_sys="dm" version="4" timestamp="2013-03-12T23:40:37.000Z">
+    <core_info id="FinDer_Imperial_M7.0">
+    <!--contributors: [finder,12345678,4,test]-->
+    <mag units="Mw">7.0</mag>
+    <mag_uncer units="Mw">0.3536</mag_uncer>
+    <lat units="deg">32.522900</lat>
+    <lat_uncer units="deg">0.3536</lat_uncer>
+    <lon units="deg">-115.211800</lon>
+    <lon_uncer units="deg">0.3536</lon_uncer>
+    <depth units="km">10.000000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-03-12T23:40:25Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+  </core_info>
+<fault_info>
+  <finite_fault atten_geom="true" segment_number="1" segment_shape="line">
+    <segment>
+      <vertices>
+        <vertex>
+          <lat units="deg">32.5229</lat>
+          <lon units="deg">-115.2118</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.5615</lat>
+          <lon units="deg">-115.2476</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.6002</lat>
+          <lon units="deg">-115.2835</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.6388</lat>
+          <lon units="deg">-115.3194</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.6774</lat>
+          <lon units="deg">-115.3553</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.7160</lat>
+          <lon units="deg">-115.3913</lon>
+        </vertex>
+      </vertices>
+    </segment>
+  </finite_fault>
+</fault_info>
+</event_message>

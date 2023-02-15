@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="1.0.0 2018-02-23" category="test" instance="jrand-contour@trinitite" message_type="new" orig_sys="eqinfo2gm" ref_id="0" ref_src="" timestamp="" version="0">
+
+  <core_info id="1989_LomaPrieta_M6.9">
+    <mag units="Mw">6.9000</mag>
+    <mag_uncer units="Mw">1.0000</mag_uncer>
+    <lat units="deg">37.0400</lat>
+    <lat_uncer units="deg">0.5000</lat_uncer>
+    <lon units="deg">-121.8800</lon>
+    <lon_uncer units="deg">0.5000</lon_uncer>
+    <depth units="km">5.0000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">1989-10-17T05:04:00.000Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+    <num_stations>0</num_stations>
+  </core_info>
+
+  <contributors>
+    <contributor alg_instance="-" alg_name="dm" alg_version="-" category="test" event_id="1989_LomaPrieta_M6.9" version="0"/>
+  </contributors>
+
+  <gm_info>
+    <gmcontour_pred number="7">
+      <contour>
+        <MMI units="">2.0000</MMI>
+        <PGA units="cm/s/s">2.8480</PGA>
+        <PGV units="cm/s">0.2154</PGV>
+        <polygon number="8">41.1982,-121.8800 39.9197,-118.0468 36.9263,-116.6759 34.0462,-118.3323 32.8818,-121.8800 34.0461,-125.4277 36.9262,-127.0841 39.9197,-125.7132 41.1982,-121.8800</polygon>
+      </contour>
+      <contour>
+        <MMI units="">3.0000</MMI>
+        <PGA units="cm/s/s">8.1113</PGA>
+        <PGV units="cm/s">0.6449</PGV>
+        <polygon number="8">39.7657,-121.8800 38.9419,-119.4021 36.9911,-118.4667 35.0891,-119.5248 34.3143,-121.8800 35.0891,-124.2352 36.9911,-125.2933 38.9419,-124.3579 39.7657,-121.8800</polygon>
+      </contour>
+      <contour>
+        <MMI units="">4.0000</MMI>
+        <PGA units="cm/s/s">23.1013</PGA>
+        <PGV units="cm/s">1.9307</PGV>
+        <polygon number="8">38.5308,-121.8800 38.0867,-120.5407 37.0254,-120.0125 35.9787,-120.5773 35.5492,-121.8800 35.9787,-123.1826 37.0254,-123.7475 38.0867,-123.2193 38.5308,-121.8800</polygon>
+      </contour>
+      <contour>
+        <MMI units="">5.0000</MMI>
+        <PGA units="cm/s/s">65.7933</PGA>
+        <PGV units="cm/s">5.7797</PGV>
+        <polygon number="8">37.6472,-121.8800 37.4681,-121.3390 37.0376,-121.1193 36.6094,-121.3451 36.4328,-121.8800 36.6094,-122.4149 37.0376,-122.6407 37.4681,-122.4210 37.6472,-121.8800</polygon>
+      </contour>
+      <contour>
+        <MMI units="">6.0000</MMI>
+        <PGA units="cm/s/s">123.8500</PGA>
+        <PGV units="cm/s">11.2687</PGV>
+        <polygon number="8">37.3234,-121.8800 37.2401,-121.6283 37.0395,-121.5249 36.8393,-121.6296 36.7566,-121.8800 36.8393,-122.1304 37.0395,-122.2351 37.2401,-122.1317 37.3234,-121.8800</polygon>
+      </contour>
+      <contour>
+        <MMI units="">7.0000</MMI>
+        <PGA units="cm/s/s">232.3380</PGA>
+        <PGV units="cm/s">21.8805</PGV>
+        <polygon number="8">37.1478,-121.8800 37.1162,-121.7844 37.0399,-121.7450 36.9637,-121.7846 36.9322,-121.8800 36.9637,-121.9754 37.0399,-122.0150 37.1162,-121.9756 37.1478,-121.8800</polygon>
+      </contour>
+      <contour>
+        <MMI units="">8.0000</MMI>
+        <PGA units="cm/s/s">435.8572</PGA>
+        <PGV units="cm/s">42.4856</PGV>
+        <polygon number="8">37.0655,-121.8800 37.0580,-121.8574 37.0400,-121.8481 37.0220,-121.8575 37.0145,-121.8800 37.0220,-121.9025 37.0400,-121.9119 37.0580,-121.9026 37.0655,-121.8800</polygon>
+      </contour>
+    </gmcontour_pred>
+  </gm_info>
+
+</event_message>
+
+

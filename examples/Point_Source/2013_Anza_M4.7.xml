@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message category="live" message_type="new" orig_sys="dm" version="0">
+  <core_info id="2013_Anza_M4.7">
+    <mag units="Mw">4.7</mag>
+    <mag_uncer units="Mw">0.5000</mag_uncer>
+    <lat units="deg">33.5973</lat>
+    <lat_uncer units="deg">0.5000</lat_uncer>
+    <lon units="deg">-116.5137</lon>
+    <lon_uncer units="deg">0.5000</lon_uncer>
+    <depth units="km">9.0000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-03-11T16:56:09.718Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>0.7000</likelihood>
+  </core_info>
+</event_message>

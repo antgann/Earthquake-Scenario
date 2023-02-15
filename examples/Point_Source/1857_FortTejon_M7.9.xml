@@ -1,0 +1,15 @@
+<event_message category="live" orig_sys="dm" message_type="new" version="0">
+    <core_info id="1857_FortTejon_M7.9">
+        <mag units="Mw">7.9</mag>
+        <mag_uncer units="Mw"> 1.0000 </mag_uncer>
+        <lat units="deg"> 35.43 </lat>
+        <lat_uncer units="deg"> 0.5000 </lat_uncer>
+        <lon units="deg"> -120.19   </lon>
+        <lon_uncer units="deg"> 0.5000 </lon_uncer>
+        <depth units="km">5</depth>
+        <depth_uncer units="km"> 50.0000 </depth_uncer>
+        <orig_time units="UTC">1857-01-09T16:20:00.000Z </orig_time>
+        <orig_time_uncer units="sec"> 20.0000 </orig_time_uncer>
+        <likelihood>1.0000</likelihood>
+    </core_info>
+</event_message>

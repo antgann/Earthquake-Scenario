@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="1.0.0 2018-02-23" category="test" instance="jrand-contour@trinitite" message_type="new" orig_sys="eqinfo2gm" ref_id="0" ref_src="" timestamp="2013-03-01T21:52:00.000Z" version="0">
+
+  <core_info id="FinDer_Mendocino_M7.8">
+    <mag units="Mw">7.0000</mag>
+    <mag_uncer units="Mw">0.3536</mag_uncer>
+    <lat units="deg">40.3500</lat>
+    <lat_uncer units="deg">0.3536</lat_uncer>
+    <lon units="deg">-124.9500</lon>
+    <lon_uncer units="deg">0.3536</lon_uncer>
+    <depth units="km">5.0000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-03-01T21:51:56.000Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+    <num_stations>0</num_stations>
+  </core_info>
+
+  <contributors>
+    <contributor alg_instance="-" alg_name="dm" alg_version="-" category="test" event_id="FinDer_Mendocino_M7.8" version="0"/>
+  </contributors>
+
+  <fault_info>
+    <finite_fault atten_geom="true" segment_number="1" segment_shape="line">
+      <segment>
+        <vertices>
+          <vertex>
+            <lat units="deg">40.3567</lat>
+            <lon units="deg">-124.9432</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">40.3446</lat>
+            <lon units="deg">-124.8892</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+        </vertices>
+      </segment>
+    </finite_fault>
+  </fault_info>
+
+  <gm_info>
+    <gmcontour_pred number="7">
+      <contour>
+        <MMI units="">2.0000</MMI>
+        <PGA units="cm/s/s">2.8480</PGA>
+        <PGV units="cm/s">0.2154</PGV>
+        <polygon number="8">44.6563,-124.9500 43.3215,-120.7647 40.2127,-119.3071 37.2406,-121.1258 36.0437,-124.9500 37.2405,-128.7742 40.2127,-130.5929 43.3215,-129.1353 44.6563,-124.9500</polygon>
+      </contour>
+      <contour>
+        <MMI units="">3.0000</MMI>
+        <PGA units="cm/s/s">8.1113</PGA>
+        <PGV units="cm/s">0.6449</PGV>
+        <polygon number="8">43.2019,-124.9500 42.3351,-122.2220 40.2897,-121.2100 38.3045,-122.3804 37.4981,-124.9500 38.3045,-127.5196 40.2897,-128.6900 42.3351,-127.6780 43.2019,-124.9500</polygon>
+      </contour>
+      <contour>
+        <MMI units="">4.0000</MMI>
+        <PGA units="cm/s/s">23.1013</PGA>
+        <PGV units="cm/s">1.9307</PGV>
+        <polygon number="8">41.9451,-124.9500 41.4683,-123.4448 40.3311,-122.8574 39.2129,-123.4943 38.7549,-124.9500 39.2129,-126.4057 40.3311,-127.0426 41.4682,-126.4552 41.9451,-124.9500</polygon>
+      </contour>
+      <contour>
+        <MMI units="">5.0000</MMI>
+        <PGA units="cm/s/s">65.7933</PGA>
+        <PGV units="cm/s">5.7797</PGV>
+        <polygon number="8">41.0121,-124.9500 40.8165,-124.3314 40.3468,-124.0812 39.8802,-124.3399 39.6879,-124.9500 39.8802,-125.5601 40.3467,-125.8188 40.8165,-125.5686 41.0121,-124.9500</polygon>
+      </contour>
+      <contour>
+        <MMI units="">6.0000</MMI>
+        <PGA units="cm/s/s">123.8500</PGA>
+        <PGV units="cm/s">11.2687</PGV>
+        <polygon number="8">40.6663,-124.9500 40.5733,-124.6555 40.3493,-124.5349 40.1259,-124.6575 40.0337,-124.9500 40.1259,-125.2425 40.3493,-125.3651 40.5733,-125.2445 40.6663,-124.9500</polygon>
+      </contour>
+      <contour>
+        <MMI units="">7.0000</MMI>
+        <PGA units="cm/s/s">232.3380</PGA>
+        <PGV units="cm/s">21.8805</PGV>
+        <polygon number="8">40.2996,-125.0798 40.4608,-125.0181 40.4676,-124.8859 40.4616,-124.8589 40.4015,-124.7524 40.2404,-124.8145 40.2336,-124.9464 40.2397,-124.9734 40.2996,-125.0798</polygon>
+      </contour>
+      <contour>
+        <MMI units="">8.0000</MMI>
+        <PGA units="cm/s/s">435.8572</PGA>
+        <PGV units="cm/s">42.4856</PGV>
+        <polygon number="8">40.3418,-124.9788 40.3838,-124.9627 40.3834,-124.9183 40.3773,-124.8913 40.3595,-124.8536 40.3175,-124.8697 40.3179,-124.9141 40.3240,-124.9411 40.3418,-124.9788</polygon>
+      </contour>
+    </gmcontour_pred>
+  </gm_info>
+
+</event_message>
+
+

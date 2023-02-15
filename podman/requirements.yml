@@ -1,0 +1,4 @@
+Django==3.2.9
+django-mathfilters
+stomp.py==7.0.0
+PyYAML

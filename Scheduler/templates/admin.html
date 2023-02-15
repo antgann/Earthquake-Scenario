@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+
+<h1>{{ "Add User" }}</h1>
+
+
+{% if error_message %}
+<div class="alert alert-danger">
+  <div class="container">
+    <strong>{{ error_message }}</strong>
+  </div>
+</div>
+{% endif %}
+
+
+
+
+<form action="{% url 'Scheduler:adminPage' %}" method="post">
+{% csrf_token %}
+
+  <div class="row">
+    <div class="col-md-1">
+      <div class="form-group">
+        <label for="newUserName">User Name</label><br />
+        <input type="text" id="newUserName" class="form-control customTextWidth" name="newUserName" value="" maxlength="50" />
+        <label for="newPassword">Password</label><br />
+        <input type="text" id="newPassword" class="form-control customTextWidth" name="newPassword" value="" maxlength="20" />
+        <label for="newBrokerName">Broker Name</label><br />
+        <input type="text" id="newBrokerName" class="form-control customTextWidth" name="newBrokerName" value="" maxlength="20" />
+        <label for="SSLPort">SSL Port</label><br />
+        <input type="text" id="SSLPort" class="form-control customTextWidth" name="SSLPort" value="61617" maxlength="5" />
+        <label for="autoPort">AMQ Auto Port</label><br />
+        <input type="text" id="autoPort" class="form-control customTextWidth" name="autoPort" value="61612" maxlength="5" />
+        <label for="webName">Website Display Name</label><br />
+        <input type="text" id="webName" class="form-control customTextWidth" name="webName" value="" maxlength="50" />
+        <label for="server">Server</label><br />
+        <input type="text" id="server" class="form-control customTextWidth" name="server" value="eew-test1.wr.usgs.gov" maxlength="50" />
+        <label for="devFlag">Developer Flag (0 for external users, 1 for local developers)</label><br />
+        <input type="text" id="devFlag" class="form-control customTextWidth" name="devFlag" value="0" maxlength="1" />
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <input class="btn btn-primary" type="submit" value="Add User" onClick="$('#newLoading').show();" />
+</form>
+
+{% endblock %}
+

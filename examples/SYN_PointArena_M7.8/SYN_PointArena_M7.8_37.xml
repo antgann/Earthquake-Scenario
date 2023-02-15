@@ -1,0 +1,64 @@
+<event_message category="test" message_type="update" orig_sys="dm" version="37" timestamp="2013-01-30T18:03:18.000Z">
+    <core_info id="FinDer_PointArena_M7.8">
+    <!--contributors: [finder,12345678,37,test]-->
+    <mag units="Mw">7.8</mag>
+    <mag_uncer units="Mw">0.3536</mag_uncer>
+    <lat units="deg">39.007000</lat>
+    <lat_uncer units="deg">0.3536</lat_uncer>
+    <lon units="deg">-123.696000</lon>
+    <lon_uncer units="deg">0.3536</lon_uncer>
+    <depth units="km">5.000000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-01-30T18:02:00Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+  </core_info>
+<fault_info>
+  <finite_fault atten_geom="true" segment_number="1" segment_shape="line">
+    <segment>
+      <vertices>
+        <vertex>
+          <lat units="deg">39.0070</lat>
+          <lon units="deg">-123.6960</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">38.9698</lat>
+          <lon units="deg">-123.6690</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">38.9197</lat>
+          <lon units="deg">-123.6240</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">38.6876</lat>
+          <lon units="deg">-123.4080</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">38.4507</lat>
+          <lon units="deg">-123.1560</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">38.2350</lat>
+          <lon units="deg">-122.9580</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">37.9740</lat>
+          <lon units="deg">-122.7330</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">37.7601</lat>
+          <lon units="deg">-122.5620</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">37.5060</lat>
+          <lon units="deg">-122.3460</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">37.4500</lat>
+          <lon units="deg">-122.2920</lon>
+        </vertex>
+      </vertices>
+    </segment>
+  </finite_fault>
+</fault_info>
+</event_message>

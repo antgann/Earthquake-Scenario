@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<title>Schedule a Scenario</title>
+{% endblock %}
+
+{% block script %}{% endblock %}
+
+{% block content %}
+
+{% if error_message %}
+<div class="alert alert-danger">
+  <div class="container">
+    <strong>{{ error_message }}</strong>
+  </div>
+</div>
+{% endif %}
+
+
+<div align="right">
+    <h4 class="alert alert-success">{{ request.session.welcomeMessage }}</h4>
+</div>	
+
+<div align="right">
+    <h4 class="alert alert-info">{{ request.session.sysMessage|linebreaks }}</h4>
+</div>
+
+<div class="col-md-6">
+  <div class="container">
+    <img src="{{ request.session.SAImageLocation }}" width="60%" height="60%" />
+    <br />To run a scenario, select what type of message is desired, and set your topic name accordingly:<br />
+    <b>
+      <br />Your assigned server/SSL port is eew-test1.wr.usgs.gov:61617
+      <br />Your auto+SSL port is 61612
+      <br />(protocols supported: STOMP, AMQP, MQTT, Openwire)
+      <br />Your STOMP over Websocket port is 61614 and your assigned topics are
+      <br />STANDARD:  eew.test_{{ request.session.userTopicName }}.dm.data
+      <br />CONTOUR:  eew.test_{{ request.session.userTopicName }}.gm-contour.data
+      <br />MAP:  eew.test_{{ request.session.userTopicName }}.gm-map.data
+    </b>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <a href="{% url 'Scheduler:buildEvent' %}"><h3>{{ "Build Your Own Event" }}</h3></a>
+  <h3>{{ "Or" }}</h3>
+  <h3>{{ "Choose an Event" }}</h3>
+
+  <form action="{% url 'Scheduler:scheduleTest' %}" method="post">
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Name</th>
+        <th>Event</th>
+        <th>Contour</th>
+        <th>Grid</th>
+        <th>Follow-up</th>
+        <th># of Updates</th>
+        <th>Alert Description (click for metadata)</th>
+      </tr>
+
+{% csrf_token %}
+  {% for category, catEvents in event %}
+    {% if 'DevEvents' in category and not request.session.devAcct %}
+      {# this is a comment. Do nothing. #}
+    {% else %}
+    {% for element in catEvents %}        
+      <tr>
+        <td><b>{{ category }}</b></td>
+        <td><b>{{ element.eventID }}</b></td>
+        <td>
+          <input type="radio" name="EEWEvent" value="{{ element.uniqueID }}|event" {% if request.session.lastEventSelected == element.uniqueID|add:"|event" %} checked="checked"  {% endif %} />
+        </td>
+        <td>
+          <input type="radio" name="EEWEvent" value="{{ element.uniqueID }}|contour" {% if request.session.lastEventSelected == element.uniqueID|add:"|contour" %} checked="checked"  {% endif %} />
+        </td>
+        <td>
+          <input type="radio" name="EEWEvent" value="{{ element.uniqueID }}|map" {% if request.session.lastEventSelected == element.uniqueID|add:"|map" %} checked="checked"  {% endif %} />
+        </td>
+        <td>{{ element.followUp }}</td>
+        <td>{{ element.updateMessages }}</td>
+        <td>{{ element.description }} <a href="#showHide{{ element.uniqueID }}" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="More">More</a>
+        </td>
+      </tr>
+
+      <div data-role="popup" id="showHide{{ element.uniqueID }}" class="ui-content" data-theme="a" style="max-width:350px;">
+        <b>
+          {{ "Event ID: " }} {{ element.eventID }} <br />
+          {{ "Alert Description: " }} {{ element.description }} <br />
+          {{ "Magnitude: " }} {{ element.magnitude }} <br />
+          {{ "Location: " }} {{ element.location }} <br />
+          {{ "Depth: " }} {{ element.depth }} <br />
+          {{ "Event Notes: " }} {{ element.eventNotes }} <br />
+        </b>
+      </div>
+	{% endfor %}
+	{% endif %}
+  {% endfor %}
+    </table>
+    <br /><b>Encoding of output:</b><br />
+    <table>
+      <tr>
+        <td>
+          <input type="radio" name="messageEncoding" id="textMessage" value="textMessage" {% if request.session.lastEncodingSelected == "textMessage" %} checked="checked"  {% endif %} />
+        </td>
+        <td>textMessage</td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" name="messageEncoding" id="bytesMessage" value="bytesMessage" {% if request.session.lastEncodingSelected == "bytesMessage" %} checked="checked"  {% endif %} />
+        </td>
+        <td>bytesMessage</td>
+      </tr>
+    </table>
+
+    <br /><br /><br /><br />
+    <input class="btn btn-primary" type="submit" value="Schedule" onClick="$('#newLoading').show();" />
+  </form>
+</div>
+
+
+<div id="newLoading" style="display:none;"><h5>Loading - Please Wait</h5></div>
+
+
+
+
+{% endblock %}
+

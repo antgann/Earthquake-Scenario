@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+<title>Log In</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+{% endblock %}
+
+{% block style %}
+
+  #username, #password {
+     width:360px;    
+  }
+
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ "EEW Scenario System" }}</h1>
+
+{% if loginPage %}
+          <div class="alert alert-info">
+{% else %}
+          <div class="alert alert-danger">
+{% endif %}
+            <div class="container">
+                {{ state }}
+            </div>
+          </div>	
+
+	<form action="{% url 'Scheduler:loginUser' %}" method="post">
+	{% csrf_token %}
+		{% if next %}
+		<input type="hidden" name="next" value="{{ next }}" />
+		{% endif %}
+          <div class="row">
+	    <div class="col-md-1">
+	      <div class="form-group">
+		<input type="text" placeholder="Username" id="username" class="form-control" name="username" value="" />
+	      </div>
+	    </div>
+	  </div>
+          <div class="row">
+	    <div class="col-md-1">
+	      <div class="form-group">
+		<input type="password" placeholder="Password" id="password" class="form-control" name="password" value="" /><br />
+	      </div>
+	    </div>
+	  </div>
+	  <input class="btn btn-default" type="submit" value="Log In" />
+	</form>
+{% endblock %}

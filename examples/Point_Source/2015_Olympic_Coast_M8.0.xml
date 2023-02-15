@@ -1,0 +1,15 @@
+<event_message category="playback" detectDelaySecs="12" orig_sys="dm" message_type="new" version="0">
+    <core_info id="Olympic_Coast_M8.0">
+        <mag units="Mw">8.0 </mag>
+        <mag_uncer units="Mw"> 1.0000 </mag_uncer>
+        <lat units="deg"> 47.797</lat>
+        <lat_uncer units="deg"> 0.5000 </lat_uncer>
+        <lon units="deg"> -124.732 </lon>
+        <lon_uncer units="deg"> 0.5000 </lon_uncer>
+        <depth units="km">23.0</depth>
+        <depth_uncer units="km"> 10.0000 </depth_uncer>
+        <orig_time units="UTC">2015-01-10T16:49:00.000Z </orig_time>
+        <orig_time_uncer units="sec"> 5.0000 </orig_time_uncer>
+        <likelihood>1.0000</likelihood>
+    </core_info>
+</event_message>

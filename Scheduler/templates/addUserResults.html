@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div align="right">
+  <div class="container">
+    <h4 class="alert alert-success" align="right">{{ request.session.welcomeMessage }}</h4>
+  </div>
+</div>	
+
+<h1>{{ "Added User Confirmation Details" }}</h1>
+
+<h4>{{ "User Name: " }} {{ newUserName }}</h4>
+
+<h4>{{ "Broker Name: " }} {{ newBrokerName }}</h4>
+
+<h4>{{ "SSL Port: " }} {{ SSLPort }}</h4>
+
+<h4>{{ "Auto Transmit Port: " }} {{ autoPort }}</h4>
+
+{% endblock %}
+
+
+
+
+

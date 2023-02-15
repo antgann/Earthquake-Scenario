@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="2.0.5 2013-05-08" category="live" instance="dm@eew2" message_type="new" orig_sys="dm" timestamp="2013-08-24T01:16:45.925Z" version="0">
+
+  <core_info id="2013_SantaMaria_M4.1">
+    <mag units="Mw">4.1</mag>
+    <mag_uncer units="Mw">0.5000</mag_uncer>
+    <lat units="deg">34.3523</lat>
+    <lat_uncer units="deg">0.1283</lat_uncer>
+    <lon units="deg">-121.6143</lon>
+    <lon_uncer units="deg">0.1283</lon_uncer>
+    <depth units="km">8.0000</depth>
+    <depth_uncer units="km">5.0000</depth_uncer>
+    <orig_time units="UTC">2013-08-24T01:16:21.340Z</orig_time>
+    <orig_time_uncer units="sec">2.5177</orig_time_uncer>
+    <likelihood>0.7000</likelihood>
+  </core_info>
+
+</event_message>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="1.0.0 2018-02-23" category="test" instance="jrand-map@trinitite" message_type="new" orig_sys="eqinfo2gm" ref_id="0" ref_src="" timestamp="" version="0">
+
+  <core_info id="2013_SantaMaria_M4.1">
+    <mag units="Mw">4.1000</mag>
+    <mag_uncer units="Mw">0.5000</mag_uncer>
+    <lat units="deg">34.3523</lat>
+    <lat_uncer units="deg">0.1283</lat_uncer>
+    <lon units="deg">-121.6143</lon>
+    <lon_uncer units="deg">0.1283</lon_uncer>
+    <depth units="km">8.0000</depth>
+    <depth_uncer units="km">5.0000</depth_uncer>
+    <orig_time units="UTC">2013-08-24T01:16:21.340Z</orig_time>
+    <orig_time_uncer units="sec">2.5177</orig_time_uncer>
+    <likelihood>0.7000</likelihood>
+    <num_stations>0</num_stations>
+  </core_info>
+
+  <contributors>
+    <contributor alg_instance="dm@eew2" alg_name="dm" alg_version="2.0.5 2013-05-08" category="test" event_id="2013_SantaMaria_M4.1" version="0"/>
+  </contributors>
+
+  <gm_info>
+    <gmmap_pred number="7">
+      <grid_field index="1" name="LON" units="deg"/>
+      <grid_field index="2" name="LAT" units="deg"/>
+      <grid_field index="3" name="PGA" units="cm/s/s"/>
+      <grid_field index="4" name="PGV" units="cm/s"/>
+      <grid_field index="5" name="MMI" units=""/>
+      <grid_data>
+-121.8000 34.2000 1.839799 0.051919 1.98
+-121.8000 34.4000 2.877790 0.081811 2.21
+-121.6000 34.2000 3.109597 0.088632 2.25
+-121.6000 34.4000 12.404652 0.382424 2.94
+-121.6000 34.6000 1.481152 0.041863 1.87
+-121.4000 34.2000 1.625612 0.045896 1.92
+-121.4000 34.4000 2.367274 0.066969 2.11
+</grid_data>
+    </gmmap_pred>
+  </gm_info>
+
+</event_message>
+
+

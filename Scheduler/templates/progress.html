@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load mathfilters %}
+
+{% block script %}
+{% endblock %}
+
+{% block head %}
+<title>Progress</title>
+{% endblock %}
+
+{% block content %}
+
+<script>
+var Timer = function(callback, delay) {
+    var timerId;
+
+    this.pause = function() {
+        window.clearTimeout(timerId);
+    };
+
+    this.resume = function() {
+        window.clearTimeout(timerId);
+        timerId = window.setTimeout(callback, delay);
+    };
+
+    this.resume();
+};
+
+var timer = new Timer(function() {
+    location.href = "{% url 'Scheduler:checkProgress' %}";
+}, 10000);
+</script>
+
+<div align="right">
+  <div class="container">
+    <h4 class="alert alert-success" align="right">{{ request.session.welcomeMessage }}</h4>
+  </div>
+</div>	
+
+<div class="container">
+  <h2>{{ "Progress" }}</h2>
+  <div class="progress" style="height: 20px;">
+    <div class="progress-bar" role="progressbar" aria-valuenow="{{ percentDone }}" aria-valuemin="0" aria-valuemax="100" style="width:{{ percentDone }}%">{{ percentDone }}%
+    </div>
+  </div>
+</div>
+<h4>{{ "Event ID: " }} {{ nextEventID }}_{{ chosenEvent.eventID }}</h4><br />
+{% for tp in sleepIntervals %}
+  Update version: {{ tp.0 }}&nbsp;&nbsp;Message processing time: {{ tp.2 }} seconds&nbsp;
+  {% if tp.1|div:request.session.totalSleep <= percentDone|div:100 %}
+    &nbsp;&nbsp;<img src="/static/assets/img/check_1280.png" width="1%" height="1%" />&nbsp;Message processed
+  {% endif %}
+  <br />
+{% endfor %}
+
+<br /><br />
+<form action="{% url 'Scheduler:checkProgress' %}" method="POST">
+{% csrf_token %}
+  <div align="center">
+    <input class="btn btn-fill btn-danger" type="submit" name="Abort" value="Abort" onClick="timer.pause();" />
+  </div>
+</form>
+
+{% endblock %}
+
+
+
+
+

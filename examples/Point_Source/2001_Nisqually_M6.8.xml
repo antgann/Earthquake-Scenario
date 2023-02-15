@@ -1,0 +1,15 @@
+<event_message category="playback" detectDelaySecs="10" orig_sys="dm" message_type="new" version="0">
+    <core_info id="2001_Nisqually_M6.8">
+        <mag units="Mw">6.8 </mag>
+        <mag_uncer units="Mw"> 1.0000 </mag_uncer>
+        <lat units="deg"> 47.149</lat>
+        <lat_uncer units="deg"> 0.5000 </lat_uncer>
+        <lon units="deg"> -122.727 </lon>
+        <lon_uncer units="deg"> 0.5000 </lon_uncer>
+        <depth units="km">51.9</depth>
+        <depth_uncer units="km"> 10.0000 </depth_uncer>
+        <orig_time units="UTC">2001-02-28T18:54:00.000Z </orig_time>
+        <orig_time_uncer units="sec"> 5.0000 </orig_time_uncer>
+        <likelihood>1.0000</likelihood>
+    </core_info>
+</event_message>

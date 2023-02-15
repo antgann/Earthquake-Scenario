@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<event_message alg_vers="1.0.0 2018-02-23" category="test" instance="jrand-contour@trinitite" message_type="new" orig_sys="eqinfo2gm" ref_id="0" ref_src="" timestamp="" version="0">
+
+  <core_info id="FinDer_SaltonSea_M7.8">
+    <mag units="Mw">7.0000</mag>
+    <mag_uncer units="Mw">0.3536</mag_uncer>
+    <lat units="deg">33.3527</lat>
+    <lat_uncer units="deg">0.3536</lat_uncer>
+    <lon units="deg">-115.7330</lon>
+    <lon_uncer units="deg">0.3536</lon_uncer>
+    <depth units="km">5.0000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-01-30T18:07:52.000Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+    <num_stations>0</num_stations>
+  </core_info>
+
+  <contributors>
+    <contributor alg_instance="-" alg_name="dm" alg_version="-" category="test" event_id="FinDer_SaltonSea_M7.8" version="0"/>
+  </contributors>
+
+  <fault_info>
+    <finite_fault atten_geom="true" segment_number="1" segment_shape="line">
+      <segment>
+        <vertices>
+          <vertex>
+            <lat units="deg">33.3672</lat>
+            <lon units="deg">-115.7310</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+          <vertex>
+            <lat units="deg">33.3933</lat>
+            <lon units="deg">-115.7670</lon>
+            <depth units="">0.0000</depth>
+          </vertex>
+        </vertices>
+      </segment>
+    </finite_fault>
+  </fault_info>
+
+  <gm_info>
+    <gmcontour_pred number="7">
+      <contour>
+        <MMI units="">2.0000</MMI>
+        <PGA units="cm/s/s">2.8480</PGA>
+        <PGV units="cm/s">0.2154</PGV>
+        <polygon number="8">37.6590,-115.7330 36.3411,-111.9535 33.2463,-110.5818 30.2576,-112.2088 29.0464,-115.7330 30.2576,-119.2572 33.2463,-120.8842 36.3410,-119.5125 37.6590,-115.7330</polygon>
+      </contour>
+      <contour>
+        <MMI units="">3.0000</MMI>
+        <PGA units="cm/s/s">8.1113</PGA>
+        <PGV units="cm/s">0.6449</PGV>
+        <polygon number="8">36.2046,-115.7330 35.3450,-113.2609 33.3060,-112.3200 31.3137,-113.3728 30.5008,-115.7330 31.3136,-118.0931 33.3060,-119.1460 35.3450,-118.2051 36.2046,-115.7330</polygon>
+      </contour>
+      <contour>
+        <MMI units="">4.0000</MMI>
+        <PGA units="cm/s/s">23.1013</PGA>
+        <PGV units="cm/s">1.9307</PGV>
+        <polygon number="8">34.9478,-115.7330 34.4731,-114.3649 33.3381,-113.8236 32.2176,-114.3999 31.7576,-115.7330 32.2176,-117.0661 33.3381,-117.6424 34.4731,-117.1011 34.9478,-115.7330</polygon>
+      </contour>
+      <contour>
+        <MMI units="">5.0000</MMI>
+        <PGA units="cm/s/s">65.7933</PGA>
+        <PGV units="cm/s">5.7797</PGV>
+        <polygon number="8">34.0148,-115.7330 33.8196,-115.1695 33.3502,-114.9404 32.8833,-115.1755 32.6906,-115.7330 32.8833,-116.2905 33.3502,-116.5256 33.8196,-116.2965 34.0148,-115.7330</polygon>
+      </contour>
+      <contour>
+        <MMI units="">6.0000</MMI>
+        <PGA units="cm/s/s">123.8500</PGA>
+        <PGV units="cm/s">11.2687</PGV>
+        <polygon number="8">33.6690,-115.7330 33.5761,-115.4645 33.3521,-115.3543 33.1287,-115.4659 33.0364,-115.7330 33.1287,-116.0001 33.3521,-116.1117 33.5761,-116.0015 33.6690,-115.7330</polygon>
+      </contour>
+      <contour>
+        <MMI units="">7.0000</MMI>
+        <PGA units="cm/s/s">232.3380</PGA>
+        <PGV units="cm/s">21.8805</PGV>
+        <polygon number="8">33.4715,-115.7330 33.4366,-115.6324 33.3526,-115.5908 33.2687,-115.6326 33.2339,-115.7330 33.2687,-115.8334 33.3526,-115.8752 33.4366,-115.8336 33.4715,-115.7330</polygon>
+      </contour>
+      <contour>
+        <MMI units="">8.0000</MMI>
+        <PGA units="cm/s/s">435.8572</PGA>
+        <PGV units="cm/s">42.4856</PGV>
+        <polygon number="8">33.3836,-115.7330 33.3746,-115.7068 33.3527,-115.6960 33.3308,-115.7068 33.3218,-115.7330 33.3308,-115.7592 33.3527,-115.7700 33.3746,-115.7592 33.3836,-115.7330</polygon>
+      </contour>
+    </gmcontour_pred>
+  </gm_info>
+
+</event_message>
+
+

@@ -1,0 +1,5 @@
+This is the system message area!  From time to time we will post system wide messages to keep our users informed of important updates and notifications.
+
+-1  We have added capabilities for alternate protocols.  In addition to STOMP we currently we can also now support STOMP over Websocket, MQTT, AMQP, and Openwire.
+
+

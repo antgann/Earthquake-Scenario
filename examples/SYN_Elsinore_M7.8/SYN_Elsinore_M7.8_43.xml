@@ -1,0 +1,80 @@
+<event_message category="test" message_type="update" orig_sys="dm" version="43" timestamp="2013-01-30T16:49:50.000Z">
+    <core_info id="FinDer_Elsinore_M7.8">
+    <!--contributors: [finder,12345678,43,test]-->
+    <mag units="Mw">7.8</mag>
+    <mag_uncer units="Mw">0.3536</mag_uncer>
+    <lat units="deg">32.530000</lat>
+    <lat_uncer units="deg">0.3536</lat_uncer>
+    <lon units="deg">-115.710000</lon>
+    <lon_uncer units="deg">0.3536</lon_uncer>
+    <depth units="km">5.000000</depth>
+    <depth_uncer units="km">50.0000</depth_uncer>
+    <orig_time units="UTC">2013-01-30T16:48:20Z</orig_time>
+    <orig_time_uncer units="sec">20.0000</orig_time_uncer>
+    <likelihood>1.0000</likelihood>
+  </core_info>
+<fault_info>
+  <finite_fault atten_geom="true" segment_number="1" segment_shape="line">
+    <segment>
+      <vertices>
+        <vertex>
+          <lat units="deg">32.4300</lat>
+          <lon units="deg">-115.5400</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.5583</lat>
+          <lon units="deg">-115.7216</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.6864</lat>
+          <lon units="deg">-115.9038</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.8142</lat>
+          <lon units="deg">-116.0865</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">32.9417</lat>
+          <lon units="deg">-116.2697</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.0690</lat>
+          <lon units="deg">-116.4534</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.1960</lat>
+          <lon units="deg">-116.6377</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.3227</lat>
+          <lon units="deg">-116.8225</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.4492</lat>
+          <lon units="deg">-117.0078</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.5754</lat>
+          <lon units="deg">-117.1937</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.7013</lat>
+          <lon units="deg">-117.3801</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.8269</lat>
+          <lon units="deg">-117.5671</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.8896</lat>
+          <lon units="deg">-117.6608</lon>
+        </vertex>
+        <vertex>
+          <lat units="deg">33.9209</lat>
+          <lon units="deg">-117.7077</lon>
+        </vertex>
+      </vertices>
+    </segment>
+  </finite_fault>
+</fault_info>
+</event_message>
