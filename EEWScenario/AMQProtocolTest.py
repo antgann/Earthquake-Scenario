@@ -45,7 +45,7 @@ class AMQPMessaging(MessagingHandler):
 
 
 
-broker_address="eew-test1.wr.usgs.gov"
+broker_address="localhost"
 port = 61612
 MQTTtopic = "eew/test_guest1/dm/data"
 AMQPtopic = "topic://eew.test_guest1.dm.data"
